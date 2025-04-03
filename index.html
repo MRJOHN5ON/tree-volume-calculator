@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Given's Fire and Forestry Tree to Cord Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="https://givens.com" class="logo-link">
+                <img src="assets/GIVENS (1).png" alt="Given's Fire and Forestry" class="logo">
+            </a>
+            <h1>Given's Fire and Forestry Tree to Cord Converter</h1>
+            <p class="intro">
+                Got a tree cut down and want to know how many cords of wood you've got? 
+                Enter the tree's measurements below, and this tool will calculate the volume 
+                and convert it to cords. This calculator assumes you can measure both the 
+                bottom and top diameters, meaning the tree has been cut down.
+            </p>
+        </header>
+
+        <div class="calculator-card">
+            <div class="input-group">
+                <label for="bottomDiameter">
+                    Bottom Diameter (inches)
+                    <span class="tooltip" data-tooltip="The diameter of the tree's base in inches">
+                        <i class="fas fa-info-circle"></i>
+                    </span>
+                </label>
+                <input type="number" id="bottomDiameter" min="0" step="0.1" placeholder="e.g., 24">
+            </div>
+
+            <div class="input-group">
+                <label for="topDiameter">
+                    Top Diameter (inches)
+                    <span class="tooltip" data-tooltip="The diameter at the tree's top in inches">
+                        <i class="fas fa-info-circle"></i>
+                    </span>
+                </label>
+                <input type="number" id="topDiameter" min="0" step="0.1" placeholder="e.g., 12">
+            </div>
+
+            <div class="input-group">
+                <label for="height">
+                    Height (feet)
+                    <span class="tooltip" data-tooltip="The total height of the tree in feet">
+                        <i class="fas fa-info-circle"></i>
+                    </span>
+                </label>
+                <input type="number" id="height" min="0" step="0.1" placeholder="e.g., 30">
+            </div>
+
+            <div class="results" id="results">
+                <div class="result-item">
+                    <span class="result-label">Volume:</span>
+                    <span id="volume">0 cubic inches</span>
+                </div>
+                <div class="result-item">
+                    <span class="result-label">Cords:</span>
+                    <span id="cords">0 cords</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="assets/_WLrUb7gRiKKbjQ3KMYdig.webp" alt="Tree harvesting" class="info-image">
+        </div>
+
+        <div class="info-card">
+            <h2>What is a Cord of Wood?</h2>
+            <p>
+                A cord is the standard unit of measurement for firewood in the United States and Canada. 
+                One full cord measures 4 feet high by 4 feet wide by 8 feet long (4' × 4' × 8') and 
+                has a volume of 128 cubic feet (3.62 m³). This is equivalent to 221,184 cubic inches.
+            </p>
+            <div class="image-container">
+                <img src="assets/2v0Z2uLgRIKhdmhzTXflCg.webp" alt="Cord of wood" class="info-image">
+            </div>
+            <p>
+                A full cord typically contains about 600-800 pieces of split wood (depending on the size of the splits) 
+                and weighs approximately 2 tons (4,000 lbs), though this can vary based on the type of wood and its moisture content.
+            </p>
+        </div>
+
+        <footer>
+            <a href="https://givens.com" class="logo-link">
+                <img src="assets/GIVENS (1).png" alt="Given's Fire and Forestry" class="footer-logo">
+            </a>
+            <p>&copy; 2025 Given's Fire and Forestry | Created by <a href="https://mrjohn5on.github.io" target="_blank">Ryley Johnson</a> | Check out our <a href="https://treecalculator.com/height" target="_blank">Tree Height Calculator</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
